@@ -1,10 +1,12 @@
 {
   "command": {
     "publish": {
-      "ignoreChanges": ["**/__fixtures__/**", "**/*.test.js", "**/*.md"]
+      "ignoreChanges": ["**/__fixtures__/**", "**/*.test.js", "**/*.md"],
+      "message": "chore: publish"
     },
     "version": {
-      "allowBranch": "main"
+      "allowBranch": "main",
+      "message": "chore: publish"
     }
   },
   "npmClient": "yarn",
