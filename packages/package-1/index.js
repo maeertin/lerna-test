@@ -1,4 +1,5 @@
-import { greet, present } from "@maeertin/utils";
+import { exit, greet, present } from "@maeertin/utils";
 
-greet("Martin");
 present("package-1");
+greet("Alex");
+exit();
