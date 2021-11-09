@@ -1,0 +1,25 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "release:version": "HUSKY_SKIP_HOOKS=1 lerna version --conventional-commits --no-push",
+    "release:version:mui": "HUSKY_SKIP_HOOKS=1 lerna version --no-changelog --no-push --no-git-tag-version",
+    "release:build": "lerna run --parallel --scope \"@noaignite/*\" build",
+    "release:publish": "lerna publish from-package --dist-tag latest --contents build",
+    "release:publish:dry-run": "lerna publish from-package --dist-tag latest --contents build --registry=\"http://localhost:4873/\"",
+    "test": "lerna run --parallel test",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "@commitlint/config-lerna-scopes": "^14.0.0",
+    "@commitlint/cz-commitlint": "^14.1.0",
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.0",
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

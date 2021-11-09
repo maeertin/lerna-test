@@ -1,0 +1,13 @@
+{
+  "command": {
+    "publish": {
+      "ignoreChanges": ["**/__fixtures__/**", "**/*.test.js", "**/*.md"]
+    },
+    "version": {
+      "allowBranch": "main"
+    }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent"
+}

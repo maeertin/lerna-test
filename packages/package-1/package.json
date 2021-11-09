@@ -1,0 +1,22 @@
+{
+  "name": "@maeertin/package-1",
+  "version": "0.0.0",
+  "private": false,
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified for package-1 \""
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

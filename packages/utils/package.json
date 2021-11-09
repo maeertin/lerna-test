@@ -1,0 +1,19 @@
+{
+  "name": "@maeertin/utils",
+  "version": "0.0.0",
+  "private": false,
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified for utils\""
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
