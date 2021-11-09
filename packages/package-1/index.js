@@ -1,5 +1,5 @@
-import { exit, greet, present } from "@maeertin/utils";
+import { exit, greet, presentPackageName } from "@maeertin/utils";
 
-present("package-1");
+presentPackageName("package-1");
 greet("Alex");
 exit();
